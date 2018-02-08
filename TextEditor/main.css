@@ -1,0 +1,8 @@
+div.dropdown-menu {
+    padding: 0;
+    border: 0;
+}
+
+.btn-group .btn + .btn {
+    margin-left: 0;
+}

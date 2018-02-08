@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Text Editor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="dropdown" style="float:left; margin-right:4px;">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-font"></span>
+                          <span class="caret"></span>
+                       </button>
+                       <!-- Font -->
+                        <div class="dropdown-menu">
+                            <div class="btn-group-vertical btn-block">
+                                <button id="Arial" type="button" class="btn btn-default">Arial</button>
+                                <button id="Comic" type="button" class="btn btn-default">Comic Sans MS</button>
+                                <button id="Courier" type="button" class="btn btn-default">Courier New</button>
+                                <button id="Georgia" type="button" class="btn btn-default">Georgia</button>
+                                <button id="Impact" type="button" class="btn btn-default">Impact</button>
+                                <button id="Lucida" type="button" class="btn btn-default">Lucida Console</button>
+                                <button id="Times" type="button" class="btn btn-default">Times New Roman</button>
+                                <button id="Trebuchet" type="button" class="btn btn-default">Trebuchet MS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Font size -->
+                    <div class="dropdown" style="float:left; margin-right:4px;">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-text-size"></span>
+                          <span class="caret"></span>
+                       </button>
+                        <div class="dropdown-menu">
+                            <div class="btn-group-vertical btn-block">
+                                <button id="parag" type="button" class="btn btn-default">Paragraphs</button>
+                                <button id="heading" type="button" class="btn btn-default">Heading 1</button>
+                                <button id="smal" type="button" class="btn btn-default">Subheading</button>
+                                <button id="head2" type="button" class="btn btn-default">Heading 2</button>
+                                <button id="head3" type="button" class="btn btn-default">Heading 3</button>
+                                <button id="head4" type="button" class="btn btn-default">Heading 4</button>
+                                <button id="head5" type="button" class="btn btn-default">Heading 5</button>
+                                <button id="head6" type="button" class="btn btn-default">Heading 6</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button id="bold" type="button" class="btn btn-default"><span class="glyphicon glyphicon-bold"></span></button>
+                        <button id="italic" type="button" class="btn btn-default"><span class="glyphicon glyphicon-italic"></span></button>
+                        <button id="underline" type="button" class="btn btn-default"><span class="glyphicon"><u><b>U</b></u></span></button>
+                        <!-- Color -->
+                        <div class="dropdown" style="float:left;">
+                            <button class="btn btn-default dropdown-toggle" style="border-top-left-radius:0px; border-bottom-left-radius:0px;" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-text-color"></span>
+                              <span class="caret"></span>
+                           </button>
+                            <div class="dropdown-menu" style="min-width: 152px;">
+                                <button id="cBlack" type="button" class="btn btn-xs" style="background-color:black;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cFirebrick" type="button" class="btn btn-xs" style="background-color:firebrick;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cOrange" type="button" class="btn btn-xs" style="background-color:orange;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cGreen" type="button" class="btn btn-xs" style="background-color:Green;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cNavy" type="button" class="btn btn-xs" style="background-color:Navy;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cPurple" type="button" class="btn btn-xs" style="background-color:purple;">&nbsp;&nbsp;&nbsp;</button>
+
+                                <button id="cGray" type="button" class="btn btn-xs" style="background-color:gray;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cCrimson" type="button" class="btn btn-xs" style="background-color:crimson;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cGold" type="button" class="btn btn-xs" style="background-color:gold;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cLime" type="button" class="btn btn-xs" style="background-color:Lime;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cDodgerBlue" type="button" class="btn btn-xs" style="background-color:DodgerBlue;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cDarkOrchid" type="button" class="btn btn-xs" style="background-color:DarkOrchid;">&nbsp;&nbsp;&nbsp;</button>
+
+                                <button id="cWhite" type="button" class="btn btn-default btn-xs">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cTomato" type="button" class="btn btn-xs" style="background-color:tomato;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cYellow" type="button" class="btn btn-xs" style="background-color:Yellow;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cGreenYellow" type="button" class="btn btn-xs" style="background-color:GreenYellow;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cAqua" type="button" class="btn btn-xs" style="background-color:Aqua;">&nbsp;&nbsp;&nbsp;</button>
+                                <button id="cViolet" type="button" class="btn btn-xs" style="background-color:Violet;">&nbsp;&nbsp;&nbsp;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Justify -->
+                    <div class="btn-group">
+                        <button id="aLeft" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+                        <button id="aCenter" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+                        <button id="aRight" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+                        <button id="ajustify" type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-justify"></span></button>
+                    </div>
+            
+                    <div class="btn-group">
+                       <!-- Ident -->
+                        <button id="indent" type="button" class="btn btn-default"><span class="glyphicon glyphicon-indent-left"></span></button>
+                        <button id="outdent" type="button" class="btn btn-default"><span class="glyphicon glyphicon-indent-right"></span></button>
+                        <!-- List -->
+                        <div class="dropdown" style="float:left;">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-radius:0px;">
+                                <span class="glyphicon glyphicon-list"></span>
+                              <span class="caret"></span>
+                           </button>
+                            <div class="dropdown-menu">
+                                <div class="btn-group-vertical btn-block">
+                                    <button id="lOrder" type="button" class="btn btn-default">&#9675; List with circle</button>
+                                    <button id="lOrder1" type="button" class="btn btn-default">1. List with numbers</button>
+                                    <button id="lOrderA" type="button" class="btn btn-default">A. List with letters</button>
+                                    <button id="lOrderI" type="button" class="btn btn-default">I. List with Roman Numbers</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- table -->
+                        <div class="dropdown" style="float:left;">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-top-left-radius:0px; border-bottom-left-radius:0px;">
+                                <span class="glyphicon glyphicon-th"></span>
+                              <span class="caret"></span>
+                           </button>
+                            <div class="dropdown-menu" style="min-width: 312px;">
+                                <div class="row" style="padding-left:0;">
+                                    <div class="col-sm-4">
+                                        <input id="iRow" type="number" value="1" min="1" max="8" class="form-control">
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <h5><b>X</b></h5>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input id="iColums" type="number" value="1" min="1" max="8" class="form-control">
+                                    </div>
+                                    <div>
+                                        <button id="bTable" type="button" class="btn btn-default">Create</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- favicon -->
+                    <div class="btn-group">
+                        <div class="dropdown" style="float:left;">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-top-right-radius:0px; border-bottom-right-radius:0px;">&#128578;
+                              <span class="caret"></span>
+                           </button>
+                            <div class="dropdown-menu" style="min-width: 143.7px;">
+
+                                <button id="happy" type="button" class="btn btn-default">&#128578;</button>
+                                <button id="joy" type="button" class="btn btn-default">&#128514;</button>
+                                <button id="glas" type="button" class="btn btn-default">&#128526;</button>
+                                <button id="love" type="button" class="btn btn-default">&#128525;</button>
+                                <button id="think" type="button" class="btn btn-default">&#129300;</button>
+                                <button id="sleep" type="button" class="btn btn-default">&#128564;</button>
+                                <button id="nerd" type="button" class="btn btn-default">&#129299;</button>
+                                <button id="distr" type="button" class="btn btn-default">&#128580;</button>
+                                <button id="sad" type="button" class="btn btn-default">&#128577;</button>
+                                <button id="neutral" type="button" class="btn btn-default">&#128566;</button>
+                                <button id="unamu" type="button" class="btn btn-default">&#128530;</button>
+                                <button id="pensive" type="button" class="btn btn-default">&#128532;</button>
+                                <button id="confuse" type="button" class="btn btn-default">&#128533;</button>
+                                <button id="astonis" type="button" class="btn btn-default">&#128562;</button>
+                                <button id="angry" type="button" class="btn btn-default">&#128545;</button>
+                                <button id="fear" type="button" class="btn btn-default">&#128561;</button>
+                                <button id="cry" type="button" class="btn btn-default">&#128546;</button>
+                                <button id="nause" type="button" class="btn btn-default">&#129314;</button>
+
+                            </div>
+                        </div>
+                        <!-- Link -->
+                        <div class="dropdown" style="float:left;">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-radius:0px;">
+                                <span class="glyphicon glyphicon-link"></span>
+                              <span class="caret"></span>
+                           </button>
+                            <div class="dropdown-menu" style="min-width: 264.1px;">
+
+                                <div style="float: left;">
+                                    <input id="iLink" type="text" class="form-control" name="page" style="border-top-right-radius:0px; border-bottom-right-radius:0px;">
+                                </div>
+                                <button id="bLink" type="button" class="btn btn-default" style="border-top-left-radius:0px; border-bottom-left-radius:0px;">Create</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Video -->
+                        <div class="dropdown" style="float:left;">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-radius:0px;">
+                                <span class="glyphicon glyphicon-facetime-video"></span>
+                              <span class="caret"></span>
+                           </button>
+                            <div class="dropdown-menu" style="min-width: 264.1px;">
+                                <div style="float: left;">
+                                    <input id="iVideo" type="text" class="form-control" name="Video" style="border-top-right-radius:0px; border-bottom-right-radius:0px;">
+                                </div>
+                                <button id="bVideo" type="button" class="btn btn-default" style="border-top-left-radius:0px; border-bottom-left-radius:0px;">Create</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Image -->
+                        <div class="dropdown" style="float:left;">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="border-top-left-radius:0px; border-bottom-left-radius:0px;">
+                                <span class="glyphicon glyphicon-picture"></span>
+                              <span class="caret"></span>
+                           </button>
+                            <div class="dropdown-menu" style="min-width: 264.1px;">
+                                <div style="float: left;">
+                                    <input id="iImg" type="text" class="form-control" name="Image" style="border-top-right-radius:0px; border-bottom-right-radius:0px;">
+                                </div>
+                                <button id="bImg" type="button" class="btn btn-default" style="border-top-left-radius:0px; border-bottom-left-radius:0px;">Create</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="text" contenteditable="true" style="height:500px;"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
